@@ -1,0 +1,272 @@
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --cpp: #9c033a;
+  --drupal: #0073BA;
+  --mysql: #00618a;
+  --js: #f0db4f;
+  --css: #3d8fc6;
+  --html: #e54d26;
+  --php: #6181b6;
+  --github: #181616;
+  --nodejs: #83CD29;
+  --flutter: #39cefd;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+a:focus {
+  color: #1A9186;
+}
+
+ol {
+  text-align: left;
+  font-size: 19px;
+}
+
+ol li {
+  padding-bottom: 5px;
+}
+
+ol a {
+  color: #222222;
+}
+
+#block-portfolio-branding {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background-color: #1A9186;
+  font-size: 20px;
+  color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a[title="Home"] {
+  color: #FEFEFE;
+  font-size: 41px;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+#block-portfolio-main-menu {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background-color: #1A9186;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#block-portfolio-main-menu>ul {
+  list-style-type: none;
+  flex-direction: row;
+  display: flex;
+}
+
+#block-portfolio-main-menu>ul li {
+  text-align: center;
+}
+
+#block-portfolio-main-menu ul li:not(:first-child) {
+  margin-left: 20px;
+}
+
+#block-portfolio-main-menu>ul>li>a {
+  text-decoration: none;
+  color: #FEFEFE;
+  display: block;
+  padding: 6px 22px 6px 22px;
+  border: 3px #FEFEFE solid;
+  transition: color 0.45s ease-in-out, background-color 0.3s;
+}
+
+article {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#block-portfolio-main-menu>ul>li>a:hover {
+  color: #1A9186;
+  background-color: #FEFEFE;
+}
+
+article footer {
+  display: none;
+}
+
+#block-portfolio-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#block-portfolio-page-title h1,
+#block-portfolio-content article h2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 31px;
+  text-align: center;
+}
+
+.views-row article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#block-portfolio-content article h2 a {
+  text-decoration: none;
+  color: #111111;
+}
+
+#block-portfolio-content>article>div>div,
+#block-portfolio-content>div>div article>div>div,
+#block-portfolio-content>div>div article>div:nth-child(6) {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  font-size: 20px;
+}
+
+#block-portfolio-content article div ul {
+  padding-top: 15px;
+  width: max-content;
+  margin: auto;
+  list-style-type: none;
+}
+
+.node-readmore a {
+  font-size: 16px;
+  background-color: #1A9186;
+  color: #FEFEFE;
+  padding: 6px 10px 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.45s;
+}
+
+.node-readmore a:hover {
+  background-color: #12665e;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  color: #FEFEFE;
+  background-color: #1A9186;
+  padding: 5px;
+}
+
+#block-portfolio-powered>span>a {
+  color: #DEDEDE;
+}
+
+#skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 90%;
+  padding: 20px;
+}
+
+.skill {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 28px;
+  color: #222222;
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill::before {
+  font-family: vedico;
+  padding-right: 6px;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.skill span {
+  font-family: 'Lato', sans-serif;
+}
+
+
+.js::before {
+  color: var(--js);
+}
+
+.php::before {
+  color: var(--php);
+}
+
+.html::before {
+  color: var(--html);
+}
+
+.css::before {
+  color: var(--css);
+}
+
+.mysql::before {
+  color: var(--mysql);
+}
+
+.nodejs::before {
+  color: var(--nodejs);
+}
+
+.drupal::before {
+  color: var(--drupal);
+}
+
+.cpp::before {
+  color: var(--cpp);
+}
+
+.electron::before {
+  color: var(--electron);
+}
+
+.flutter::before {
+  color: var(--flutter);
+}
+
+.views-row:last-child {
+  padding-bottom: 50px;
+}

@@ -1,0 +1,5 @@
+styles:
+    css:
+      theme:
+        css/style.css: {}
+        'https://cdn.jsdelivr.net/gh/vedico-org/vedico/font.css': { type: external }
